@@ -1,0 +1,155 @@
+/*CSS reset settings here*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: #FFD9B7;
+}
+#logo {
+    background-color: #B97A57;
+}
+#wrapper {
+    background-color: #FFD9B7;
+}
+#navigation {
+    background-color: #FF7F27;
+}
+#main_content {
+    background-color: #880015;
+}
+#about {
+    background-color: #FFAEC9;
+}
+#advertisement {
+    background-color: #C8BFE7;
+}
+.sponsors {
+    background-color: #FFFF88;
+    height: 60px;
+    margin-top:20px;
+}
+
+/*Mobile */
+@media only screen and (max-width: 480px) {
+    #logo, #navigation, .sponsors,#about {
+        display: block;
+    }
+   .sm-4 {
+        width: 100% !important;
+   }
+   .sm-0 {
+    display: none !important;
+   }
+   body, header, #logo, #wrapper, #about, #main_content {
+    margin: 0px;
+    padding: 0px;
+   }
+   #main_content {
+    padding: 30px;
+   }
+   #about {
+    width: calc(100% - 120px);
+    min-height: 250px;
+   }
+   #logo, #navigation {
+    height: 90px !important;
+   }
+   #wrapper {
+    padding-bottom: 20px;
+   }
+}
+
+/*Tablet */
+@media only screen and (min-width: 481px) {
+    body, header, #logo, #wrapper, #about, #main_content {
+        margin: 0px;
+        padding: 0px;
+       }
+    .md-2 {
+        width: calc(50% - 12px) !important;
+    }
+    .md-0 {
+        display:none;
+    }
+    #logo, #navigation, .sponsors {
+        display: inline-block;
+        vertical-align: top;
+    }
+    #logo {
+        width: 40%;
+        margin-right: 20px;
+        height: 140px !important;
+    }
+    #navigation {
+        width: calc(60% - 24px);
+        height: 140px !important;
+    }
+    #about {
+        display: block;
+        min-height: 250px;
+    }
+    header {
+        margin-bottom: 20px;
+    }
+   .md-0 {
+        display: none !important;
+   }
+   #main_content {
+        padding: 40px;
+   }
+   .margin-add {
+        margin-right:20px;
+   }
+   #wrapper {
+        padding-bottom: 20px;
+   }
+}
+
+/*Desktop */
+@media only screen and (min-width: 1024px){
+    body, header, #logo, #wrapper, #about, #main_content, .sponsors, #advertisement {
+        margin: 0px;
+        padding: 0px;
+       }
+    #advertisement, #about, .sponsors,#logo, #navigation {
+        display: inline-block !important;
+        vertical-align: top;
+    }
+    .lg-1 {
+        width: 33.05% !important;
+    }
+    #logo, #navigation {
+        height: 170px !important;
+    }
+    #logo {
+        width: 40%;
+        margin-right: 30px;
+    }
+    #navigation {
+        width: calc(60% - 35px);
+    }
+    header {
+        margin-bottom: 30px;
+    }
+   #main_content {
+    padding: 40px;
+   }
+   #about {
+    width: calc(100% - 20% - 44px);
+    height: 250px;
+    margin-right: 40px;
+   }
+   #advertisement {
+    width: 20% !important;
+    height: 200px;
+    }
+   .sponsors {
+    height: 80px;
+    margin-top:30px;
+   }
+   #wrapper {
+    padding: 30px;
+   }
+}
+
